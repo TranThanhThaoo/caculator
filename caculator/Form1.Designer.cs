@@ -36,6 +36,7 @@
             this.txtSoA = new System.Windows.Forms.TextBox();
             this.txtSoB = new System.Windows.Forms.TextBox();
             this.txtKetqua = new System.Windows.Forms.TextBox();
+            this.btTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -118,11 +119,24 @@
             this.txtKetqua.Size = new System.Drawing.Size(247, 27);
             this.txtKetqua.TabIndex = 4;
             // 
+            // btTru
+            // 
+            this.btTru.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btTru.ForeColor = System.Drawing.Color.Blue;
+            this.btTru.Location = new System.Drawing.Point(314, 366);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(94, 52);
+            this.btTru.TabIndex = 5;
+            this.btTru.Text = "-";
+            this.btTru.UseVisualStyleBackColor = true;
+            this.btTru.Click += new System.EventHandler(this.btTru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btTru);
             this.Controls.Add(this.txtKetqua);
             this.Controls.Add(this.txtSoB);
             this.Controls.Add(this.txtSoA);
@@ -149,5 +163,6 @@
         private TextBox txtSoA;
         private TextBox txtSoB;
         private TextBox txtKetqua;
+        private Button btTru;
     }
 }
